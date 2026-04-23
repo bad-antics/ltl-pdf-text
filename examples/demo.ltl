@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_pdf_text
+
+import std::io
+use ltl_pdf_text as lib
+
+fn main() {
+    io::println("ltl_pdf_text demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
